@@ -1,0 +1,326 @@
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   5 out of   5 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+----------------------------------------------------------------------------
+LinearRegression(copy_X=True, fit_intercept=True, n_jobs=None, normalize=False)
+----------------------------------------------------------------------------
+Results: 0.90
+[0.89960819 0.88622343 0.89116416 0.88766085 0.88709594]
+
+MSE    : 1631602.42 
+RMSE   : 1277.34 
+R2     : 0.90 
+MAE    : 839.32 
+--- 0.13524174690246582 seconds ---
+
+
+
+[Parallel(n_jobs=1)]: Done   5 out of   5 | elapsed:    1.7s finished
+----------------------------------------------------------------------------
+KNeighborsRegressor(algorithm='auto', leaf_size=30, metric='minkowski',
+                    metric_params=None, n_jobs=None, n_neighbors=5, p=2,
+                    weights='uniform')
+----------------------------------------------------------------------------
+Results: 0.95
+[0.94658    0.9402005  0.94412738 0.94430429 0.94733194]
+
+MSE    : 834834.37 
+RMSE   : 913.69 
+R2     : 0.95 
+MAE    : 493.63 
+--- 3.08320951461792 seconds ---
+
+
+
+----------------------------------------------------------------------------
+Ridge(alpha=1.0, copy_X=True, fit_intercept=True, max_iter=None,
+      normalize=False, random_state=None, solver='auto', tol=0.001)
+----------------------------------------------------------------------------
+Results: 0.90
+[0.89957876 0.88678949 0.89118191 0.88769838 0.88710878]
+
+MSE    : 1632206.75 
+RMSE   : 1277.58 
+R2     : 0.90 
+MAE    : 839.73 
+--- 0.07421255111694336 seconds ---
+
+
+
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   5 out of   5 | elapsed:    0.1s finished
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   5 out of   5 | elapsed:    1.0s finished
+/usr/local/lib/python3.6/dist-packages/sklearn/svm/base.py:193: FutureWarning: The default value of gamma will change from 'auto' to 'scale' in version 0.22 to account better for unscaled features. Set gamma explicitly to 'auto' or 'scale' to avoid this warning.
+  "avoid this warning.", FutureWarning)
+----------------------------------------------------------------------------
+DecisionTreeRegressor(criterion='mse', max_depth=None, max_features=None,
+                      max_leaf_nodes=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      presort=False, random_state=None, splitter='best')
+----------------------------------------------------------------------------
+Results: 0.97
+[0.96060774 0.96473997 0.96499601 0.96491288 0.96782547]
+
+MSE    : 539976.74 
+RMSE   : 734.83 
+R2     : 0.97 
+MAE    : 360.44 
+--- 1.2811741828918457 seconds ---
+
+
+
+Results: 0.90
+
+MSE    : 1632802.62 
+RMSE   : 1277.81 
+R2     : 0.90 
+MAE    : 842.71 
+--- 0.10715341567993164 seconds ---
+
+
+
+###### Support Vector Regression (SVR) #######
+
+Score : 0.9416
+
+MSE    : 949286.03 
+MAE    : 507.52 
+RMSE   : 974.31 
+R2     : 0.94 
+--- 141.26694440841675 seconds ---
+
+
+
+/usr/local/lib/python3.6/dist-packages/sklearn/ensemble/forest.py:245: FutureWarning: The default value of n_estimators will change from 10 in version 0.20 to 100 in 0.22.
+  "10 in version 0.20 to 100 in 0.22.", FutureWarning)
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+[Parallel(n_jobs=1)]: Done   5 out of   5 | elapsed:    6.1s finished
+----------------------------------------------------------------------------
+RandomForestRegressor(bootstrap=True, criterion='mse', max_depth=None,
+                      max_features='auto', max_leaf_nodes=None,
+                      min_impurity_decrease=0.0, min_impurity_split=None,
+                      min_samples_leaf=1, min_samples_split=2,
+                      min_weight_fraction_leaf=0.0, n_estimators=10,
+                      n_jobs=None, oob_score=False, random_state=None,
+                      verbose=0, warm_start=False)
+----------------------------------------------------------------------------
+Results: 0.98
+[0.97713817 0.97821809 0.97776673 0.97926303 0.97999004]
+
+MSE    : 327234.43 
+RMSE   : 572.04 
+R2     : 0.98 
+MAE    : 288.12 
+--- 7.745282173156738 seconds ---
+
+
+
+      Iter       Train Loss   Remaining Time 
+         1    13922923.5412            0.62s
+         2    12356513.3895            0.58s
+         3    11048953.3341            0.55s
+         4     9876324.7146            0.54s
+         5     8918328.9926            0.53s
+         6     8049373.8783            0.52s
+         7     7336758.5994            0.51s
+         8     6693968.1202            0.50s
+         9     6154764.3722            0.50s
+        10     5690091.1067            0.49s
+        20     3171705.7594            0.44s
+        30     2359314.4902            0.38s
+        40     2053467.0788            0.32s
+        50     1865713.4483            0.26s
+        60     1724094.1079            0.21s
+        70     1615324.2040            0.15s
+        80     1529606.2544            0.10s
+        90     1461137.5442            0.05s
+       100     1406392.8120            0.00s
+      Iter       Train Loss   Remaining Time 
+         1    13981875.5136            0.47s
+         2    12408434.3774            0.44s
+         3    11091065.8039            0.42s
+         4     9913714.1663            0.41s
+         5     8946257.7908            0.40s
+         6     8073370.8385            0.39s
+         7     7356070.2947            0.39s
+         8     6710784.0067            0.38s
+         9     6175674.2591            0.37s
+        10     5706681.2601            0.37s
+        20     3190214.3387            0.31s
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+        30     2377212.5155            0.27s
+        40     2069318.5048            0.23s
+        50     1878273.9236            0.20s
+        60     1735273.8718            0.15s
+        70     1625518.8199            0.11s
+        80     1539358.4216            0.07s
+        90     1470645.5837            0.04s
+       100     1415879.0550            0.00s
+      Iter       Train Loss   Remaining Time 
+         1    13893107.8170            0.47s
+         2    12329580.8855            0.48s
+         3    11017728.7179            0.48s
+         4     9859176.4775            0.50s
+         5     8894380.3854            0.50s
+         6     8036596.6695            0.48s
+         7     7318914.9464            0.46s
+         8     6683996.0512            0.45s
+         9     6141709.6061            0.43s
+        10     5669210.8748            0.42s
+        20     3165780.8452            0.33s
+        30     2352553.6549            0.27s
+        40     2045985.8609            0.23s
+        50     1858738.8932            0.19s
+        60     1717118.3131            0.15s
+        70     1609084.2497            0.11s
+        80     1523465.3103            0.07s
+        90     1455328.2857            0.04s
+       100     1400558.3619            0.00s
+      Iter       Train Loss   Remaining Time 
+         1    13866692.8118            0.45s
+         2    12309128.6999            0.44s
+         3    11009436.6485            0.44s
+         4     9843559.4490            0.43s
+         5     8890432.9206            0.41s
+         6     8024999.8445            0.40s
+         7     7315030.0261            0.39s
+         8     6684768.4526            0.38s
+         9     6142515.0300            0.37s
+        10     5673383.2844            0.36s
+        20     3163763.2913            0.30s
+        30     2352826.0765            0.25s
+        40     2047122.9324            0.21s
+        50     1857625.7683            0.18s
+        60     1714756.4468            0.15s
+        70     1604012.2500            0.11s
+        80     1518080.2520            0.07s
+        90     1449262.5250            0.04s
+       100     1394164.1400            0.00s
+      Iter       Train Loss   Remaining Time 
+         1    13922933.0766            0.52s
+         2    12352992.4303            0.46s
+         3    11042845.5079            0.44s
+         4     9879175.0878            0.42s
+         5     8912392.4313            0.42s
+         6     8048985.9473            0.40s
+         7     7330596.0274            0.40s
+         8     6693032.5538            0.39s
+         9     6152816.6045            0.38s
+        10     5680532.1081            0.38s
+        20     3167252.4565            0.31s
+        30     2360170.3606            0.27s
+        40     2056138.6804            0.23s
+        50     1869708.7474            0.20s
+        60     1729145.1691            0.16s
+        70     1620062.8088            0.12s
+        80     1534767.9291            0.08s
+        90     1466296.3016            0.04s
+       100     1411991.2917            0.00s
+      Iter       Train Loss   Remaining Time 
+         1    13949858.2106            0.46s
+         2    12378129.7679            0.46s
+         3    11055275.2714            0.44s
+         4     9905512.7692            0.42s
+         5     8932625.0241            0.41s
+         6     8075182.1990            0.40s
+         7     7344670.0875            0.43s
+         8     6704944.8929            0.43s
+         9     6163976.2547            0.42s
+        10     5687417.4082            0.41s
+        20     3159013.4249            0.33s
+        30     2339179.4688            0.28s
+        40     2034623.7138            0.23s
+        50     1850914.5054            0.19s
+        60     1710709.0921            0.15s
+        70     1603597.5574            0.12s
+        80     1519404.6140            0.08s
+        90     1451818.4822            0.04s
+       100     1397863.5225            0.00s
+----------------------------------------------------------------------------
+GradientBoostingRegressor(alpha=0.9, criterion='friedman_mse', init=None,
+                          learning_rate=0.1, loss='ls', max_depth=1,
+                          max_features=None, max_leaf_nodes=None,
+                          min_impurity_decrease=0.0, min_impurity_split=None,
+                          min_samples_leaf=1, min_samples_split=2,
+                          min_weight_fraction_leaf=0.0, n_estimators=100,
+                          n_iter_no_change=None, presort='auto',
+                          random_state=309, subsample=1.0, tol=0.0001,
+                          validation_fraction=0.1, verbose=1, warm_start=False)
+----------------------------------------------------------------------------
+Results: 0.91
+[0.91222284 0.90938206 0.90814609 0.91043136 0.90559089]
+
+MSE    : 1427945.21 
+RMSE   : 1194.97 
+R2     : 0.91 
+MAE    : 699.97 
+--- 2.597330331802368 seconds ---
+
+
+
+[Parallel(n_jobs=1)]: Done   5 out of   5 | elapsed:    2.0s finished
+/usr/local/lib/python3.6/dist-packages/sklearn/svm/base.py:929: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+/usr/local/lib/python3.6/dist-packages/sklearn/svm/base.py:929: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/usr/local/lib/python3.6/dist-packages/sklearn/svm/base.py:929: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/usr/local/lib/python3.6/dist-packages/sklearn/svm/base.py:929: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/usr/local/lib/python3.6/dist-packages/sklearn/svm/base.py:929: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+/usr/local/lib/python3.6/dist-packages/sklearn/svm/base.py:929: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  "the number of iterations.", ConvergenceWarning)
+[Parallel(n_jobs=1)]: Done   5 out of   5 | elapsed:    1.2s finished
+----------------------------------------------------------------------------
+LinearSVR(C=1.0, dual=True, epsilon=0.0, fit_intercept=True,
+          intercept_scaling=1.0, loss='epsilon_insensitive', max_iter=1000,
+          random_state=309, tol=1e-05, verbose=0)
+----------------------------------------------------------------------------
+Results: 0.80
+[0.78640556 0.79159533 0.79217063 0.79451085 0.78743554]
+
+MSE    : 3274041.47 
+RMSE   : 1809.43 
+R2     : 0.80 
+MAE    : 1059.18 
+--- 1.520871877670288 seconds ---
+
+
+
+/usr/local/lib/python3.6/dist-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+[Parallel(n_jobs=1)]: Using backend SequentialBackend with 1 concurrent workers.
+/usr/local/lib/python3.6/dist-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/usr/local/lib/python3.6/dist-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/usr/local/lib/python3.6/dist-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/usr/local/lib/python3.6/dist-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+/usr/local/lib/python3.6/dist-packages/sklearn/neural_network/multilayer_perceptron.py:566: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (1000) reached and the optimization hasn't converged yet.
+  % self.max_iter, ConvergenceWarning)
+[Parallel(n_jobs=1)]: Done   5 out of   5 | elapsed: 39.0min finished
+----------------------------------------------------------------------------
+MLPRegressor(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+             beta_2=0.999, early_stopping=False, epsilon=1e-08,
+             hidden_layer_sizes=(100,), learning_rate='constant',
+             learning_rate_init=0.001, max_iter=1000, momentum=0.9,
+             n_iter_no_change=10, nesterovs_momentum=True, power_t=0.5,
+             random_state=None, shuffle=True, solver='adam', tol=0.0001,
+             validation_fraction=0.1, verbose=False, warm_start=False)
+----------------------------------------------------------------------------
+Results: 0.95
+[0.9428802  0.93431064 0.94280458 0.94645648 0.9463439 ]
+
+MSE    : 849355.91 
+RMSE   : 921.61 
+R2     : 0.95 
+MAE    : 529.70 
+--- 2928.854570388794 seconds ---
+
+
