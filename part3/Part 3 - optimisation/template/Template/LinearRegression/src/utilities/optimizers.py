@@ -58,6 +58,26 @@ def mini_batch_gradient_descent(y, x, theta, max_iters, alpha, metric_type, mini
     losses = []
     thetas = []
     # Please refer to the function "gradient_descent" to implement the mini-batch gradient descent here
+    n = len(x)
+    for i in range(max_iters):
+        from sklearn.utils import shuffle
+        x, y = shuffle(x, y)
+
+        for j in range(0, n, mini_batch_size):
+            batch_x = x[j:j + mini_batch_size]
+            batch_y = y[j:j + mini_batch_size]
+            n = len(batch_x)
+            gradient = -2 * batch_x.T.dot(batch_y - batch_x.dot(theta)) / n
+            theta = theta - alpha * gradient
+            loss = compute_loss(batch_y, batch_x, theta, metric_type)
+
+            # Track losses and thetas
+            thetas.append(theta)
+            losses.append(loss)
+
+            print("MiniBGD({bi}/{ti}): loss={l}, w={w}, b={b}".format(
+                bi=i, ti=max_iters - 1, l=loss, w=theta[0], b=theta[1]))
+
     return thetas, losses
 
 
